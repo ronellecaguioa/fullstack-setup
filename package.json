@@ -4,7 +4,9 @@
   "description": "Boilerplate code for applications using the MERN stack with webpack configured.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/server.js",
+    "build": "webpack",
+    "client": "webpack-dev-server"
   },
   "author": "Ronelle Caguioa <ronelle.caguioa@gmail.com>",
   "license": "MIT",
