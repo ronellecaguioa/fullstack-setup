@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: '/app/index.js',
+  entry: './app/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public', 'dist'),
@@ -15,7 +15,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset=react'],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
             plugins: ['@babel/plugin-proposal-class-properties'],
           },
         },
@@ -31,7 +31,7 @@ module.exports = {
     hot: true,
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, 'public'),
-    publicPath: '/public/dist',
+    publicPath: '/dist',
   },
   devtool: 'eval-source-map',
 };
