@@ -1,12 +1,12 @@
 {
   "name": "fullstack-setup",
   "version": "1.0.0",
-  "description": "Boilerplate code for applications using the MERN stack with webpack configured.",
+  "description": "Boilerplate for applications consisting of the MERN stack with webpack preconfigured.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/server.js",
-    "build": "webpack",
-    "client": "webpack-dev-server"
+    "start": "NODE_ENV=production nodemon server/server.js",
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development nodemon server/server.js & webpack-dev-server"
   },
   "author": "Ronelle Caguioa <ronelle.caguioa@gmail.com>",
   "license": "MIT",
